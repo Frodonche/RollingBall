@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import fr.ul.dataFactories.TextureFactory;
 import fr.ul.rollingball.RollingBall;
+import com.badlogic.gdx.Gdx;
 
 /**
  * Created by roth52u on 24/01/17.
@@ -26,7 +27,7 @@ public class SplashScreen extends ScreenAdapter {
     @Override
     public void render(float delta){
         spriteBatch.begin();
-        spriteBatch.draw(TextureFactory.getIntro(), 0, 0);
+        spriteBatch.draw(TextureFactory.getIntro(), 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         spriteBatch.end();
         try {
             TimeUnit.SECONDS.sleep(1);
@@ -34,7 +35,7 @@ public class SplashScreen extends ScreenAdapter {
             e.printStackTrace();
         }
         duree ++;
-        if (duree >= 3){
+        if (duree == 3){
             rollingBall.toGameScreen();
         }
     }

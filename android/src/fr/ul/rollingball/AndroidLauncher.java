@@ -16,10 +16,11 @@ public class AndroidLauncher extends AndroidApplication {
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
 
 		config.a = 8; // Indique le nb de bits de codage du canal alpha
-
-		boolean disponible = Gdx.input.isPeripheralAvailable(Input.Peripheral.Accelerometer);
+		//boolean disponible = Gdx.input.isPeripheralAvailable(Input.Peripheral.Accelerometer);
 		//Log.i("Dispo : ", String.valueOf(disponible)); // pour tester la valeur booléenne
-		config.useAccelerometer = disponible;
+		//Methode pour check si on a un accelerometre => FAIT CRASH L'APPLI
+
+		config.useAccelerometer = true;
 
 		initialize(new RollingBall(), config);
 	}

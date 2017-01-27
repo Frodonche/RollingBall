@@ -1,6 +1,9 @@
 package fr.ul.views;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.graphics.Camera;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import fr.ul.dataFactories.TextureFactory;
@@ -17,6 +20,12 @@ public class GameScreen extends ScreenAdapter {
     public GameScreen(RollingBall rollingBall){
         this.rollingBall = rollingBall;
         this.spriteBatch = new SpriteBatch();
+
+        Camera camera = new OrthographicCamera(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        this.spriteBatch.setProjectionMatrix(camera.combined);
+        camera.position.set(Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2, 0);
+        camera.project(camera.position, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        camera.update();
     }
 
     @Override

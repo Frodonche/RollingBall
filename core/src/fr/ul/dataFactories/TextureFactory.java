@@ -2,6 +2,7 @@ package fr.ul.dataFactories;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 
 /**
  * Created by roth52u on 24/01/17.
