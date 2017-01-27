@@ -21,11 +21,11 @@ public class GameScreen extends ScreenAdapter {
         this.rollingBall = rollingBall;
         this.spriteBatch = new SpriteBatch();
 
-        Camera camera = new OrthographicCamera(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-        this.spriteBatch.setProjectionMatrix(camera.combined);
-        camera.position.set(Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2, 0);
-        camera.project(camera.position, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        Camera camera = new OrthographicCamera(Gdx.graphics.getWidth()/2f, Gdx.graphics.getHeight()/2f);
+        camera.position.set(camera.viewportWidth/2, camera.viewportHeight/2, 0);
+        //camera.project(camera.position, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         camera.update();
+        this.spriteBatch.setProjectionMatrix(camera.combined);
     }
 
     @Override
