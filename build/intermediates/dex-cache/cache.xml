@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\guigu\AndroidStudioProjects\RollingBall\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="01ae9cc5d846ab56763e89e49ae3843389c29177">
+        <dex dex="C:\Users\guigu\AndroidStudioProjects\RollingBall\android\build\intermediates\pre-dexed\debug\core-1.0_4b4d4a159a3f60246299a3d2836ab3e925a740e7.jar" />
+    </item>
+
+</items>

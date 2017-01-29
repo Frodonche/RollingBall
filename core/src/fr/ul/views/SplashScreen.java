@@ -1,13 +1,13 @@
 package fr.ul.views;
 
 import com.badlogic.gdx.ScreenAdapter;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.util.concurrent.TimeUnit;
 
 import fr.ul.dataFactories.TextureFactory;
 import fr.ul.rollingball.RollingBall;
+
 import com.badlogic.gdx.Gdx;
 
 /**
@@ -37,6 +37,7 @@ public class SplashScreen extends ScreenAdapter {
         duree ++;
         if (duree == 3){
             rollingBall.toGameScreen();
+
         }
     }
 

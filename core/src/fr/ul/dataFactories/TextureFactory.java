@@ -12,10 +12,13 @@ public class TextureFactory {
     private static TextureFactory instance = new TextureFactory();
     private static Texture intro = new Texture(Gdx.files.internal("images/Intro.jpg"));
     private static Texture deco = new Texture(Gdx.files.internal("images/Deco.jpg"));
+    private static Texture boule = new Texture(Gdx.files.internal("images/badlogic.jpg"));
 
     public TextureFactory getInstance(){ return this.instance; }
 
     public static Texture getIntro(){ return intro; }
 
     public static Texture getDeco(){ return deco; }
+
+    public static Texture getBoule(){ return boule; }
 }
