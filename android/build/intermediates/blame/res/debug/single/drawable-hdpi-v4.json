@@ -1,6 +1,18 @@
 [
     {
-        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
-        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/res/drawable-hdpi/ic_launcher.png"
+        "merged": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_action_name.png",
+        "source": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable-hdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_stat_name.png",
+        "source": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable-hdpi\\ic_stat_name.png"
     }
 ]
