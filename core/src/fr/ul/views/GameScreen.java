@@ -82,42 +82,11 @@ public class GameScreen extends ScreenAdapter {
                 break;
         }
         // on limite un peu la puissance l'accélération
-        accX = accX / 20;
-        accY = accY / 20;
+        accX = accX / 10;
+        accY = accY / 10;
 
-        // on empêche la boule de sortir et de booster l'accélération contre le mur
-        // si la boule touche pas les bords
-
-        boolean neTouchePasLeBord = this.world.getBoule().getPosition().x + this.world.getBoule().getCurrent_radius() <= Gdx.graphics.getWidth() &&
-                this.world.getBoule().getPosition().x >= 0 &&
-                this.world.getBoule().getPosition().y + this.world.getBoule().getCurrent_radius() <= Gdx.graphics.getHeight() &&
-                this.world.getBoule().getPosition().y >= 0;
-
-        if(neTouchePasLeBord) {
-            this.world.getBoule().accelerer(new Vector3(accX, accY, 0)); // on modifie le mouvement de la boule
-        }
-        else {
-            if (this.world.getBoule().getPosition().x + this.world.getBoule().getCurrent_radius() > Gdx.graphics.getWidth()) // si on touche les bords
-                this.stopperBoule(); // on stoppe la balle pour qu'elle s'écrase au mur et ne rebondisse pas
-                this.world.getBoule().accelerer(new Vector3(-2, 0, 0)); // on recule d'un cran pour toujours pouvoir bouger
-
-            if (this.world.getBoule().getPosition().x < 0)
-                this.stopperBoule();
-                this.world.getBoule().accelerer(new Vector3(1, 0, 0));
-
-            if (this.world.getBoule().getPosition().y + this.world.getBoule().getCurrent_radius() > Gdx.graphics.getHeight())
-                this.stopperBoule();
-                this.world.getBoule().accelerer(new Vector3(0, -2, 0));
-
-            if (this.world.getBoule().getPosition().y < 0)
-                this.stopperBoule();
-                this.world.getBoule().accelerer(new Vector3(0, 1, 0));
-
-        }
-        this.world.getBoule().maj(); // puis on modifie sa position dans tous les cas
+        this.world.getBoule().accelerer(new Vector3(accX, accY, 0)); // on modifie le mouvement de la boule
+        this.world.getBoule().maj();
     }
 
-    public void stopperBoule(){ // stopper la boule reviens à lui donner le vecteur opposé à celui de sa vitesse
-        this.world.getBoule().accelerer(new Vector3(-this.world.getBoule().getVitesse().x, -this.world.getBoule().getVitesse().y, 0));
-    }
 }
