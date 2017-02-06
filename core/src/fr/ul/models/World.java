@@ -36,7 +36,7 @@ public class World {
     }
 
     public void draw(SpriteBatch sB){
-        sB.draw(getLabyTexture(), 0, 0);
+        sB.draw(getLabyTexture(), 0, 0, Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2);
         this.getBoule().draw(sB);
     }
 

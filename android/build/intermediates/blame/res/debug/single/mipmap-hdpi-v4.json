@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
-        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
-        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]
