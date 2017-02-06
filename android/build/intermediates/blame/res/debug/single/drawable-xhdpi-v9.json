@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v9\\ic_stat_name.png",
-        "source": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable-xhdpi-v9\\ic_stat_name.png"
+        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v9\\ic_stat_name.png",
+        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable-xhdpi-v9\\ic_stat_name.png"
+    },
+    {
+        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/res/merged/debug/drawable-xhdpi-v9/ic_stat_name.png",
+        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/res/drawable-xhdpi-v9/ic_stat_name.png"
     }
 ]
