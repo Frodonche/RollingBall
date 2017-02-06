@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\guigu\AndroidStudioProjects\RollingBall\core\build\libs\core-1.0.jar"
+        jar="/home/profil/roth52u/AndroidStudioProjects/RollingBall/core/build/libs/core-1.0.jar"
         jumboMode="false"
         revision="25.0.2"
-        sha1="2ff0c5020631ba22638c0263d768b5c394ff20f2">
-        <dex dex="C:\Users\guigu\AndroidStudioProjects\RollingBall\android\build\intermediates\pre-dexed\debug\core-1.0_4b4d4a159a3f60246299a3d2836ab3e925a740e7.jar" />
+        sha1="a7b04dd9ab87268b3d443eca7a72c6531c65bae4">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/core-1.0_71689b25e70825f8c7e25e15bf0817ff9b80f0a8.jar" />
     </item>
 
 </items>

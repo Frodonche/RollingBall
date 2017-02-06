@@ -8,7 +8,7 @@ import com.badlogic.gdx.math.Vector3;
  * Created by guigu on 29/01/2017.
  */
 
-public class MovableElement extends GameElement {
+public abstract class MovableElement extends GameElement {
     protected Vector3 vitesse;
     protected SpriteBatch spriteBatch;
 
@@ -16,16 +16,6 @@ public class MovableElement extends GameElement {
         super(position); // on passe les paramètres à la superclasse
         this.vitesse = new Vector3(); // nouveau vecteur
         this.spriteBatch = new SpriteBatch(); //spritebatch de l'élément
-    }
-
-    public void draw(SpriteBatch spriteBatch){
-        // bidon pour avoir la paix avec AS
-    }
-
-    public void draw(Texture texture, float width, float height){
-        spriteBatch.begin();
-        spriteBatch.draw(texture, getPosition().x, getPosition().y, width, height);
-        spriteBatch.end();
     }
 
     public Vector3 getVitesse(){ // une deuxième méthode ????
