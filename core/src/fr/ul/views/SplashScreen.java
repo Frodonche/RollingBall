@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.util.concurrent.TimeUnit;
 
+import fr.ul.dataFactories.SoundFactory;
 import fr.ul.dataFactories.TextureFactory;
 import fr.ul.rollingball.RollingBall;
 
@@ -17,7 +18,6 @@ import com.badlogic.gdx.Gdx;
 public class SplashScreen extends ScreenAdapter {
     protected RollingBall rollingBall;
     protected SpriteBatch spriteBatch;
-    protected int duree;
 
     public SplashScreen(RollingBall rollingBall){
         this.rollingBall = rollingBall;
@@ -29,6 +29,9 @@ public class SplashScreen extends ScreenAdapter {
         spriteBatch.begin();
         spriteBatch.draw(TextureFactory.getIntro(), 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         spriteBatch.end();
+        // si met la lecture du son dans un if, ça lit pas... Pourquoi ?
+        SoundFactory.lireVictoire(50);
+
         try {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
