@@ -19,12 +19,19 @@ public class World {
     protected Pixmap labyPixmap;
     protected Texture labyTexture;
     protected int currentLabyNumber;
+    protected Pill pill;
 
     public World(GameScreen gameScreen){
         this.gameScreen = gameScreen;
         // on initialise la boule au milieu de l'écran
         this.boule = new Boule(this, new Vector3(Gdx.graphics.getWidth()/4f, Gdx.graphics.getHeight()/4f, 0f));
         this.setLaby(0);
+        this.pill = new Pill(this, new Vector3(50, 50,0)) {
+            @Override
+            void effect() {
+
+            }
+        };
     }
 
     public SpriteBatch getSpriteBatch(){
@@ -37,7 +44,8 @@ public class World {
 
     public void draw(SpriteBatch sB){
         sB.draw(getLabyTexture(), 0, 0, Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2);
-        this.getBoule().draw(sB);
+        this.boule.draw(sB);
+        this.pill.draw(sB);
     }
 
     public Pixmap getLabyPixmap(){ return this.labyPixmap; }

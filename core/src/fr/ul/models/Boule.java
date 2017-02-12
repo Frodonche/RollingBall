@@ -24,8 +24,8 @@ public class Boule extends MovableElement {
     }
 
     public void draw(SpriteBatch sB){
-        float x = super.getPosition().x;
-        float y = super.getPosition().y;
+        float x = getPosition().x;
+        float y = getPosition().y;
         sB.draw(texture, x-(current_radius), y-(current_radius), current_radius*2, current_radius*2);
     }
 

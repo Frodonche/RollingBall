@@ -18,10 +18,12 @@ import com.badlogic.gdx.Gdx;
 public class SplashScreen extends ScreenAdapter {
     protected RollingBall rollingBall;
     protected SpriteBatch spriteBatch;
+    protected int duree;
 
     public SplashScreen(RollingBall rollingBall){
         this.rollingBall = rollingBall;
         this.spriteBatch = new SpriteBatch();
+        this.duree = 0;
     }
 
     @Override
@@ -30,7 +32,9 @@ public class SplashScreen extends ScreenAdapter {
         spriteBatch.draw(TextureFactory.getIntro(), 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         spriteBatch.end();
         // si met la lecture du son dans un if, ça lit pas... Pourquoi ?
-        SoundFactory.lireVictoire(50);
+
+        if(duree < 2)
+            SoundFactory.lireVictoire(50);
 
         try {
             TimeUnit.SECONDS.sleep(1);

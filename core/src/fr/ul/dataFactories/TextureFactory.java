@@ -6,11 +6,17 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.TextureData;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.utils.Array;
 
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Collections;
+
+import fr.ul.models.Pill;
 
 /**
  * Created by roth52u on 24/01/17.
@@ -30,8 +36,10 @@ public class TextureFactory {
     private static Texture pastilleNormaleFixe = new Texture(Gdx.files.internal("images/pastilleNormale.bmp"));
     private static Texture pastilleNormaleAnim = new Texture(Gdx.files.internal("images/pastilleNormale.png"));
     private static Texture pastilleTempsFixe = new Texture(Gdx.files.internal("images/pastilleTemps.bmp"));
-    private static Texture pastilleTempsAnim = new Texture(Gdx.files.internal("images/pastilleTemps.png"));
+    private static Texture pastilleTempsAnim;
     private static ArrayList<String> listeLaby;
+
+    private static Animation animPastilleTemps;
 
     public static TextureFactory getInstance(){ return instance; }
     public static Texture getIntro(){ return intro; }
@@ -47,6 +55,7 @@ public class TextureFactory {
     public static Texture getPastilleTempsFixe(){ return pastilleTempsFixe; }
     public static Texture getPastilleTempsAnim(){ return pastilleTempsAnim; }
     public static String getLaby(int param) { return listeLaby.get(param); }
+    public static Animation getAnimPastilleTemps() { return animPastilleTemps; }
 
     private TextureFactory(){
         FilenameFilter FnF = new FilenameFilter() {
@@ -65,6 +74,23 @@ public class TextureFactory {
 
         Collections.sort(listeLaby);
         System.out.println("MA LISTE LABY : "+listeLaby.toString());
+
+
+        // création animation de la pastilleTemps
+        TextureAtlas atlasPastilleTemps = new TextureAtlas(Gdx.files.internal("images/pastilleTemps.pack"));
+        Array<Sprite> imsPastilleTemps = atlasPastilleTemps.createSprites("pastilleTemps");
+        pastilleTempsAnim = new Texture(Gdx.files.internal("images/pastilleTemps.png"));
+        int largeurPastilleTemps = pastilleTempsAnim.getWidth();
+        int nbImsPastilleTemps = pastilleTempsAnim.getHeight() / largeurPastilleTemps;
+        System.out.println("LargeurPastilleTemps : "+largeurPastilleTemps);
+        System.out.println("pastilleTempsAnim.getHeight() : "+pastilleTempsAnim.getHeight());
+        System.out.println("nbImsPastilleTemps : "+nbImsPastilleTemps);
+        TextureRegion[][] grillePastilleTemps = TextureRegion.split(pastilleTempsAnim, largeurPastilleTemps, largeurPastilleTemps);
+        Array<TextureRegion> PastilleTempsEnLigne = new Array<TextureRegion>();
+        for(int i=0; i<nbImsPastilleTemps; i++)
+            PastilleTempsEnLigne.add(grillePastilleTemps[i][0]);
+        //animPastilleTemps = new Animation(0.10f, PastilleTempsEnLigne, Animation.PlayMode.LOOP);
+        animPastilleTemps = new Animation(0.10f, PastilleTempsEnLigne, Animation.PlayMode.LOOP);
     }
 
     public static Texture getLabyTexture(int param){
