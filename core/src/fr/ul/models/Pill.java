@@ -15,17 +15,12 @@ import fr.ul.dataFactories.TextureFactory;
 
 public abstract class Pill {
     public static float radius = 15;
-    private World monde;
-    private Vector3 pos;
-
-    private Animation anim;
-    private float tempsAnim;
+    protected World monde;
+    protected Vector3 pos;
 
     public Pill(World monde, Vector3 pos){
         this.monde = monde;
         this.pos = pos;
-        this.anim = TextureFactory.getInstance().getAnimPastilleTemps();
-        this.tempsAnim = 0;
     }
 
     public float getRadius(){
@@ -34,11 +29,11 @@ public abstract class Pill {
 
     abstract void effect();
 
-    //abstract void draw(SpriteBatch sb);
+    abstract void draw(SpriteBatch sb);
 
-    public void draw (SpriteBatch sB){
-        tempsAnim += Gdx.graphics.getDeltaTime();
-        TextureRegion im = (TextureRegion)anim.getKeyFrame(tempsAnim);
-        sB.draw(im, pos.x, pos.y, radius, radius);
-    }
 }
+
+// TYPES PASTILLES
+// 128 = normale
+// 200 = taille
+// 225 = temps

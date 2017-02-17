@@ -39,6 +39,8 @@ public class TextureFactory {
     private static Texture pastilleTempsAnim;
     private static ArrayList<String> listeLaby;
 
+    private static Animation animPastilleNormale;
+    private static Animation animPastilleTaille;
     private static Animation animPastilleTemps;
 
     public static TextureFactory getInstance(){ return instance; }
@@ -55,6 +57,8 @@ public class TextureFactory {
     public static Texture getPastilleTempsFixe(){ return pastilleTempsFixe; }
     public static Texture getPastilleTempsAnim(){ return pastilleTempsAnim; }
     public static String getLaby(int param) { return listeLaby.get(param); }
+    public static Animation getAnimPastilleNormale() { return animPastilleNormale; }
+    public static Animation getAnimPastilleTaille() { return animPastilleTaille; }
     public static Animation getAnimPastilleTemps() { return animPastilleTemps; }
 
     private TextureFactory(){
@@ -76,20 +80,42 @@ public class TextureFactory {
         System.out.println("MA LISTE LABY : "+listeLaby.toString());
 
 
+        // création animation de la pastilleNormale
+        TextureAtlas atlasPastilleNormale = new TextureAtlas(Gdx.files.internal("images/pastilleNormale.pack"));
+        Array<Sprite> imsPastilleNormale = atlasPastilleNormale.createSprites("pastilleNormale");
+        pastilleNormaleAnim = new Texture(Gdx.files.internal("images/pastilleNormale.png"));
+        int largeurPastilleNormale = pastilleNormaleAnim.getWidth();
+        int nbImsPastilleNormale = pastilleNormaleAnim.getHeight() / largeurPastilleNormale;
+        TextureRegion[][] grillePastilleNormale = TextureRegion.split(pastilleNormaleAnim, largeurPastilleNormale, largeurPastilleNormale);
+        Array<TextureRegion> PastilleNormaleEnLigne = new Array<TextureRegion>();
+        for(int i=0; i<nbImsPastilleNormale; i++)
+            PastilleNormaleEnLigne.add(grillePastilleNormale[i][0]);
+        animPastilleNormale = new Animation(0.10f, PastilleNormaleEnLigne, Animation.PlayMode.LOOP);
+
+
+        // création animation de la pastilleTaille
+        TextureAtlas atlasPastilleTaille = new TextureAtlas(Gdx.files.internal("images/pastilleTaille.pack"));
+        Array<Sprite> imsPastilleTaille = atlasPastilleTaille.createSprites("pastilleTaille");
+        pastilleTailleAnim = new Texture(Gdx.files.internal("images/pastilleTaille.png"));
+        int largeurPastilleTaille = pastilleTailleAnim.getWidth();
+        int nbImsPastilleTaille = pastilleTailleAnim.getHeight() / largeurPastilleTaille;
+        TextureRegion[][] grillePastilleTaille = TextureRegion.split(pastilleTailleAnim, largeurPastilleTaille, largeurPastilleTaille);
+        Array<TextureRegion> PastilleTailleEnLigne = new Array<TextureRegion>();
+        for(int i=0; i<nbImsPastilleTaille; i++)
+            PastilleTailleEnLigne.add(grillePastilleTaille[i][0]);
+        animPastilleTaille = new Animation(0.10f, PastilleTailleEnLigne, Animation.PlayMode.LOOP);
+
+
         // création animation de la pastilleTemps
         TextureAtlas atlasPastilleTemps = new TextureAtlas(Gdx.files.internal("images/pastilleTemps.pack"));
         Array<Sprite> imsPastilleTemps = atlasPastilleTemps.createSprites("pastilleTemps");
         pastilleTempsAnim = new Texture(Gdx.files.internal("images/pastilleTemps.png"));
         int largeurPastilleTemps = pastilleTempsAnim.getWidth();
         int nbImsPastilleTemps = pastilleTempsAnim.getHeight() / largeurPastilleTemps;
-        System.out.println("LargeurPastilleTemps : "+largeurPastilleTemps);
-        System.out.println("pastilleTempsAnim.getHeight() : "+pastilleTempsAnim.getHeight());
-        System.out.println("nbImsPastilleTemps : "+nbImsPastilleTemps);
         TextureRegion[][] grillePastilleTemps = TextureRegion.split(pastilleTempsAnim, largeurPastilleTemps, largeurPastilleTemps);
         Array<TextureRegion> PastilleTempsEnLigne = new Array<TextureRegion>();
         for(int i=0; i<nbImsPastilleTemps; i++)
             PastilleTempsEnLigne.add(grillePastilleTemps[i][0]);
-        //animPastilleTemps = new Animation(0.10f, PastilleTempsEnLigne, Animation.PlayMode.LOOP);
         animPastilleTemps = new Animation(0.10f, PastilleTempsEnLigne, Animation.PlayMode.LOOP);
     }
 

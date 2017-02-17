@@ -2,11 +2,76 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\guigu\AndroidStudioProjects\RollingBall\core\build\libs\core-1.0.jar"
+        is-multidex="false"
+        jar="/home/profil/roth52u/AndroidStudioProjects/RollingBall/core/build/libs/core-1.0.jar"
         jumboMode="false"
+        optimize="true"
         revision="25.0.2"
-        sha1="92485a6d0d49134338a139c776b0c664592afb16">
-        <dex dex="C:\Users\guigu\AndroidStudioProjects\RollingBall\android\build\intermediates\pre-dexed\debug\core-1.0_4b4d4a159a3f60246299a3d2836ab3e925a740e7.jar" />
+        sha1="7bb48f60c54de9e10a36608b0158e3da96bbdccf">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/core-1.0_71689b25e70825f8c7e25e15bf0817ff9b80f0a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/profil/roth52u/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.5/293bbe05bfb5ca812c849e4d1f494f56509d5a6e/gdx-backend-android-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="293bbe05bfb5ca812c849e4d1f494f56509d5a6e">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/gdx-backend-android-1.9.5_b20ddfc9f6f2a8594fa560178276bc16aae9f2e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/profil/roth52u/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.5/dc65bb2f51828c58b1b2b3ac585357204d54ee5f/gdx-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dc65bb2f51828c58b1b2b3ac585357204d54ee5f">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/gdx-1.9.5_f8afb4af4f56785e25a498ca91512a7bb5a75d48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/profil/roth52u/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-bullet/1.9.5/2ef2d55ac157d182dbef90568f94cc2f7775eaed/gdx-bullet-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2ef2d55ac157d182dbef90568f94cc2f7775eaed">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/gdx-bullet-1.9.5_6c97b0ac977ae01987b8b8e9fa9ceaa362c38121.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/profil/roth52u/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.9.5/5a067651ea4cb1402faff77c4f73e8bfc6bc92b5/gdx-controllers-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5a067651ea4cb1402faff77c4f73e8bfc6bc92b5">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/gdx-controllers-1.9.5_032b30eee47578d4b0928611202e0abbbd3978e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/profil/roth52u/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.5/c8098219abfe00b849cc43d461b1105fea3a2944/gdx-box2d-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c8098219abfe00b849cc43d461b1105fea3a2944">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/gdx-box2d-1.9.5_5e5607b3ce6bd1d00ebace8487e4ac2e5ee9ea03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/profil/roth52u/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.5/71eba1332b3c2436d3b8e24296a0feb1c01d9e67/gdx-freetype-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="71eba1332b3c2436d3b8e24296a0feb1c01d9e67">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/gdx-freetype-1.9.5_0b6959347c5ac319277cf3d67960995ac823ecd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/profil/roth52u/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-android/1.9.5/d5f39f0adb13cabf7ab5b539b162ae89fa693009/gdx-controllers-android-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5f39f0adb13cabf7ab5b539b162ae89fa693009">
+        <dex dex="/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/pre-dexed/debug/gdx-controllers-android-1.9.5_02cd09e61937db58cb3b512199f6050ba20a8de8.jar" />
     </item>
 
 </items>

@@ -1,14 +1,18 @@
 [
     {
-        "merged": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\ouais.jpg",
-        "source": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable\\ouais.jpg"
+        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\ouais.jpg",
+        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable\\ouais.jpg"
     },
     {
-        "merged": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\ouais.jpg",
-        "source": "C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable\\ouais.jpg"
+        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/build/intermediates/res/merged/debug/drawable/ouais.jpg",
+        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/android/res/drawable/ouais.jpg"
     },
     {
-        "merged": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\ouais.jpg",
-        "source": "C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable\\ouais.jpg"
+        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\ouais.jpg",
+        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\home\\profil\\roth52u\\AndroidStudioProjects\\RollingBall\\C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable\\ouais.jpg"
+    },
+    {
+        "merged": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\ouais.jpg",
+        "source": "/home/profil/roth52u/AndroidStudioProjects/RollingBall/C:\\Users\\guigu\\AndroidStudioProjects\\RollingBall\\android\\res\\drawable\\ouais.jpg"
     }
 ]
